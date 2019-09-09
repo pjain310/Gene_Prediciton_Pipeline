@@ -1,0 +1,23 @@
+// Copyright (c) 2005 Center for Bioinformatics and Computational Biology, University of Maryland
+ 
+Motif finder program ELPH (Estimated Locations of Pattern Hits)
+ 
+Version ELPH 1.0.1
+ 
+Changes:
+
+ELPH 1.0.1 : Changed the qsort function to return 1,0,-1 values instead of 1, and 0. The previous version worked fine on Linux, but crashed on Solaris.
+ 
+ELPH 1.0 : New options included: possibility to change the degree
+of the Markov chain used to generate sequences for significance of
+motif testing; possibility to test significance of an exact match
+of the motif in two input files. Also this version ignores sequences
+where only N's are present.
+ 
+ELPH 0.1.5 : Option -c fixed.
+ 
+ELPH 0.1.4 : Fixed the display of significant motifs which
+was sometimes erronous.
+ 
+ELPH 0.1.3 : The locations of motifs in DNA/AAC sequences
+have low probability to contain N's/X's

@@ -1,0 +1,176 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:540: checking for gcc
+configure:653: checking whether the C compiler (gcc  ) works
+configure:669: gcc -o conftest    conftest.c  1>&5
+configure:695: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:700: checking whether we are using GNU C
+configure:728: checking whether gcc accepts -g
+configure:760: checking whether ln -s works
+configure:783: checking for ranlib
+configure:814: checking whether your make is GNU make
+configure:843: checking whether byte ordering is bigendian
+configure:861: gcc -c -g -O2  conftest.c 1>&5
+configure:876: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:871:2: error: unknown type name 'not'
+  not big endian
+  ^
+configure:871:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'endian'
+  not big endian
+          ^
+configure: failed program was:
+#line 865 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/param.h>
+int main() {
+
+#if BYTE_ORDER != BIG_ENDIAN
+ not big endian
+#endif
+; return 0; }
+configure:935: checking for ntohs
+configure:1037: checking for ntohl
+configure:1139: checking for htons
+configure:1241: checking for htonl
+configure:1341: checking size of unsigned short
+configure:1360: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1354:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1380: checking size of unsigned int
+configure:1399: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1393:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1419: checking size of unsigned long
+configure:1438: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1432:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1458: checking size of unsigned long long
+configure:1477: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1471:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1526: checking whether fpos_t is an arithmetic datatype
+configure:1536: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1532:40: error: invalid operands to binary == (have 'fpos_t' and 'fpos_t')
+ int main(void) { fpos_t f1, f2; if (f1 == f2) f1 = 0;}
+                                        ^
+configure:1532:50: error: incompatible types when assigning to type 'fpos_t' from type 'int'
+ int main(void) { fpos_t f1, f2; if (f1 == f2) f1 = 0;}
+                                                  ^
+configure: failed program was:
+#line 1529 "configure"
+#include "confdefs.h"
+#include <stdio.h>
+int main() {
+int main(void) { fpos_t f1, f2; if (f1 == f2) f1 = 0;}
+; return 0; }
+configure:1554: checking for ftello
+configure:1582: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1554: checking for fseeko
+configure:1582: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1609: checking for ftello64
+configure:1637: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1609: checking for fseeko64
+configure:1637: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1664: checking for ftell64
+configure:1692: gcc -o conftest -g -O2   conftest.c  1>&5
+/tmp/ccxCU5BY.o: In function `main':
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/squid/configure:1686: undefined reference to `ftell64'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1669 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char ftell64(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char ftell64();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_ftell64) || defined (__stub___ftell64)
+choke me
+#else
+ftell64();
+#endif
+
+; return 0; }
+configure:1664: checking for fseek64
+configure:1692: gcc -o conftest -g -O2   conftest.c  1>&5
+/tmp/ccqhhwq8.o: In function `main':
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/squid/configure:1686: undefined reference to `fseek64'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1669 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char fseek64(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char fseek64();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_fseek64) || defined (__stub___fseek64)
+choke me
+#else
+fseek64();
+#endif
+
+; return 0; }
+configure:1717: checking for stat64
+configure:1745: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1765: checking size of off_t
+configure:1784: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1778:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1804: checking size of off64_t
+configure:1823: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1817:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^
+configure:1818:29: error: 'off64_t' undeclared (first use in this function)
+   fprintf(f, "%d\n", sizeof(off64_t));
+                             ^
+configure:1818:29: note: each undeclared identifier is reported only once for each function it appears in
+configure: failed program was:
+#line 1812 "configure"
+#include "confdefs.h"
+#include <stdio.h>
+main()
+{
+  FILE *f=fopen("conftestval", "w");
+  if (!f) exit(1);
+  fprintf(f, "%d\n", sizeof(off64_t));
+  exit(0);
+}
+configure:1843: checking size of fpos_t
+configure:1862: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1856:11: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+   if (!f) exit(1);
+           ^

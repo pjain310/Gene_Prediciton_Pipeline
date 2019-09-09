@@ -1,0 +1,11 @@
+// Copyright (c) 2005 Center for Bioinformatics and Computational Biology, University of Maryland
+
+Motif finder program ELPH (Estimated Locations of Pattern Hits)
+
+Installation instructions:
+Run make in the sources directory.
+
+More information about the program can be read in Readme.ELPH file.
+
+Please send comments and suggestions related to ELPH to Mihaela Pertea, 
+at mpertea@umiacs.umd.edu

@@ -1,0 +1,129 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:542: checking for gcc
+configure:655: checking whether the C compiler (gcc  ) works
+configure:671: gcc -o conftest    conftest.c  1>&5
+configure:697: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:702: checking whether we are using GNU C
+configure:711: gcc -E conftest.c
+configure:730: checking whether gcc accepts -g
+configure:762: checking whether ln -s works
+configure:785: checking for ranlib
+configure:816: checking whether your make is GNU make
+configure:871: checking host system type
+configure:892: checking how to run the C preprocessor
+configure:913: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1309: checking for pthread.h
+configure:1319: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1442: checking for the pthreads library -lpthreads
+configure:1471: gcc -o conftest -g -O2    conftest.c -lpthreads  1>&5
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1462 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_t th; pthread_join(th, 0);
+   pthread_attr_init(0); pthread_cleanup_push(0, 0);
+   pthread_create(0,0,0,0); pthread_cleanup_pop(0); 
+; return 0; }
+configure:1431: checking whether pthreads work without any flags
+configure:1471: gcc -o conftest -g -O2    conftest.c   1>&5
+/tmp/ccGOWiig.o: In function `main':
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/configure:1465: undefined reference to `pthread_join'
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/configure:1466: undefined reference to `__pthread_register_cancel'
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/configure:1467: undefined reference to `pthread_create'
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/configure:1467: undefined reference to `__pthread_unregister_cancel'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1462 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_t th; pthread_join(th, 0);
+   pthread_attr_init(0); pthread_cleanup_push(0, 0);
+   pthread_create(0,0,0,0); pthread_cleanup_pop(0); 
+; return 0; }
+configure:1436: checking whether pthreads work with -Kthread
+configure:1471: gcc -o conftest -g -O2 -Kthread   conftest.c   1>&5
+gcc: error: unrecognized command line option '-Kthread'
+configure: failed program was:
+#line 1462 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_t th; pthread_join(th, 0);
+   pthread_attr_init(0); pthread_cleanup_push(0, 0);
+   pthread_create(0,0,0,0); pthread_cleanup_pop(0); 
+; return 0; }
+configure:1436: checking whether pthreads work with -kthread
+configure:1471: gcc -o conftest -g -O2 -kthread   conftest.c   1>&5
+gcc: error: unrecognized command line option '-kthread'
+configure: failed program was:
+#line 1462 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_t th; pthread_join(th, 0);
+   pthread_attr_init(0); pthread_cleanup_push(0, 0);
+   pthread_create(0,0,0,0); pthread_cleanup_pop(0); 
+; return 0; }
+configure:1442: checking for the pthreads library -llthread
+configure:1471: gcc -o conftest -g -O2    conftest.c -llthread  1>&5
+/usr/bin/ld: cannot find -llthread
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1462 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_t th; pthread_join(th, 0);
+   pthread_attr_init(0); pthread_cleanup_push(0, 0);
+   pthread_create(0,0,0,0); pthread_cleanup_pop(0); 
+; return 0; }
+configure:1436: checking whether pthreads work with -pthread
+configure:1471: gcc -o conftest -g -O2 -pthread   conftest.c   1>&5
+configure:1503: checking for joinable pthread attribute
+configure:1512: gcc -o conftest -g -O2 -pthread   conftest.c   1>&5
+configure:1554: checking if more special flags are required for pthreads
+configure:1572: checking for cc_r
+configure:1625: checking for pthread_setconcurrency
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+/tmp/ccghdTyX.o: In function `main':
+/projects/team3/geneprediction/JZ/Hammer/hmmer-2.2g/configure:1647: undefined reference to `pthread_setconcurrency'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1630 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char pthread_setconcurrency(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char pthread_setconcurrency();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_pthread_setconcurrency) || defined (__stub___pthread_setconcurrency)
+choke me
+#else
+pthread_setconcurrency();
+#endif
+
+; return 0; }
+configure:1680: checking for pthread_attr_setscope
+configure:1708: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1736: checking for ntohs
+configure:1764: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1838: checking for ntohl
+configure:1866: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1940: checking for htons
+configure:1968: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2042: checking for htonl
+configure:2070: gcc -o conftest -g -O2   conftest.c  1>&5
